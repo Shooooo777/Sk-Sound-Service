@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SK Sound | DJ & Sound Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="header-left">
+    <img src="arjun.jpg" alt="Arjun Kumar DJ" class="profile-img">
+    <div class="profile-text">
+      <h1>SK Sound</h1>
+      <p>Director: Arjun Kumar (Professional DJ)</p>
+      <p>Add: Shinghpur Sarnath Varanasi</p>
+      <p>(Arihant Nagar Colony Face 2)</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <a href="javascript:void(0)" class="book-btn btn" onclick="openBookingForm()">Book Now</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2>About Us</h2>
+  <p><strong>SK Sound</strong> ek professional DJ & Sound service hai. Hum wedding, birthday, party, jagran aur events ke liye high quality DJ & sound system provide karte hain.</p>
+</section>
+
+<section class="section services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>🎧 Wedding DJ</li>
+    <li>🔊 Heavy Sound System</li>
+    <li>🎉 Birthday & Party</li>
+    <li>🎶 Jagran & Events</li>
+    <li>💡 DJ Lights Setup</li>
+  </ul>
+</section>
+
+<section class="section gallery">
+  <h2>Event Photos</h2>
+  <div class="gallery-grid">
+    <img src="dj3.jpg" alt="Event Photo">
+    <img src="dj2.jpg" alt="Event Photo">
+    <img src="dj1.jpg" alt="Event Photo">
+    <img src="dj4.jpg" alt="Event Photo">
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact</h2>
+  <a href="tel:916388655605" class="btn call">📞 Call Now</a>
+  <a href="https://wa.me/916388655605" class="btn whatsapp">💬 WhatsApp</a>
+
+  <!-- Director Map -->
+  <div id="directorMap" class="map-box"></div>
+  <p class="address">📍 Director Location: Shinghpur Sarnath, Varanasi (Available for nearby areas)</p>
+</section>
+
+<footer class="footer">
+  <p>© 2026 SK Sound | Director Arjun Kumar</p>
+  <div class="social-icons">
+    <a href="https://instagram.com/sksound" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://facebook.com/sksound" target="_blank">
+      <img src="facebook.png" alt="Facebook">
+    </a>
+  </div>
+</footer>
+
+<!-- BOOKING POPUP -->
+<div class="booking-popup" id="bookingPopup">
+  <div class="booking-box">
+    <span class="close-btn" onclick="closeBookingForm()">✕</span>
+    <h2>DJ Booking Form</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <span class="error" id="nameError"></span>
+
+    <input type="tel" id="mobile" value="+91 " maxlength="14" placeholder="+91 9876543210">
+    <span class="error" id="mobileError"></span>
+
+    <select id="eventType">
+      <option value="">Select Event Type</option>
+      <option value="Wedding">Wedding</option>
+      <option value="Birthday">Birthday</option>
+      <option value="Party">Party</option>
+      <option value="Jagran">Jagran</option>
+      <option value="Other">Other</option>
+    </select>
+    <span class="error" id="eventTypeError"></span>
+
+    <input type="text" id="address" placeholder="Enter Event Address">
+    <span class="error" id="addressError"></span>
+
+    <input type="date" id="time">
+    <span class="error" id="dateError"></span>
+
+    <button onclick="confirmBooking()">Confirm Booking</button>
+  </div>
+</div>
+
+<!-- SUCCESS POPUP -->
+<div class="booking-success-popup" id="successPopup">
+  <div class="booking-box">
+    <span class="close-btn" onclick="closeSuccessPopup()">✕</span>
+    <h2>Booking Successful ✅</h2>
+    <p>Thank you! Your DJ booking request has been sent via WhatsApp.</p>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+<!-- Google Maps API: replace YOUR_API_KEY with your actual API key -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNo2w67v-wHwBoUZNZWJegRahRt2hySlc&libraries=places&callback=initMaps" async defer></script>
+ --></body>
+</html>
